@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="180.217" Width="380.827">
+    <Grid Margin="0,0,2,1">
+        <Label Content="Сервер:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Порт:" HorizontalAlignment="Left" Margin="196,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.453,0.146"/>
+        <TextBox Name="ServerAdr" HorizontalAlignment="Left" Height="23" Margin="63,13,0,0" TextWrapping="Wrap" Text="vnc00" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="ServerPort" HorizontalAlignment="Left" Height="23" Margin="241,14,0,0" TextWrapping="Wrap" TextOptions.TextFormattingMode="Display" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button Name="TransportCopyButton" Content="Скопировать transport Лог" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="185" Click="CopyTransLog"/>
+        <Button Name="UpdaterCopyButton" Content="Скопировать Updater Лог" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="185" Click="CopyUpdLog"/>
+        <Button Name="MonitoringCopyButton" Content="Скопировать Monutoring Лог" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="185" Click="CopyMonLog"/>
+        <Button Name="TransportDBDeletButton" Content="Удалить TransportDB" HorizontalAlignment="Left" Margin="200,42,0,0" VerticalAlignment="Top" Width="161" Height="59" Click="ClickDelDB"/>
+        <Button x:Name="ConnectionButton" Content="Подключиться/Отключиться" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="351" Click="ConnectionClick"/>
+
+    </Grid>
+</Window>
